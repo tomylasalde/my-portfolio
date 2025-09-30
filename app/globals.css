@@ -2,32 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Definición del fondo degradado con un color violeta más oscuro */
+.bg-gradient-cover {
+  background: linear-gradient(to right, #4a0072, #8832ad); /* Colores ajustados a un tono más oscuro de violeta */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Asegura que no haya scroll horizontal */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Urbanist', sans-serif; /* Asegúrate de que la fuente esté aplicada */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+main {
+  flex: 1; /* Permite que main ocupe todo el espacio disponible */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* globals.css */
+
+/* Ajusta el padding del footer para moverlo más arriba */
+/* globals.css */
+
+/* Ajusta el estilo del footer */
+footer {
+  background-color: rgb(40, 37, 58); /* Color de fondo del footer */
+  color: #fff;
+  padding: 1rem; /* Ajusta el padding según sea necesario */
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Distribuye el espacio entre el correo y LinkedIn */
+  align-items: center; /* Centra verticalmente los elementos */
+  position: fixed; /* Fija el footer al fondo de la ventana */
+  bottom: 0; /* Alinea el footer al fondo de la ventana */
+}
+
+footer .left {
+  flex: 1; /* Ocupa el espacio restante a la izquierda */
+}
+
+footer .center {
+  text-align: center; /* Centra el texto de derechos */
+  flex: 1; /* Ocupa el espacio restante en el centro */
+}
+
+footer .right {
+  flex: 1; /* Ocupa el espacio restante a la derecha */
+  text-align: right; /* Alinea el contenido a la derecha */
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Otros estilos globales */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
