@@ -37,8 +37,7 @@ footer {
   display: flex;
   justify-content: space-between; /* Distribuye el espacio entre el correo y LinkedIn */
   align-items: center; /* Centra verticalmente los elementos */
-  position: fixed; /* Fija el footer al fondo de la ventana */
-  bottom: 0; /* Alinea el footer al fondo de la ventana */
+  flex-shrink: 0; /* Evita que el footer se achique y quede tapando contenido */
 }
 
 footer .left {

@@ -18,10 +18,50 @@ const MyProjects = () => {
       githubLink: "https://github.com/tomylasalde/Restaurant-Web",
       color: "from-purple-600 to-pink-600",
     },
+    {
+      title: "SubastAr - Auction Platform",
+      description:
+        "A real-time auction mobile app built as a university group project. It covers the full user flow, from registration with identity verification to live bidding, payment methods and notifications, backed by a REST API documented with Swagger and secured with JWT.",
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "JWT",
+        "WebSocket",
+        "Docker",
+        "Swagger",
+      ],
+      githubLink: "https://github.com/luislacoste/TPO-Desarrollo-apps-g17",
+      color: "from-blue-600 to-cyan-600",
+    },
+    {
+      title: "Netflix Clone - Polyglot Persistence",
+      description:
+        "A full-stack Netflix-style streaming platform built with Next.js as a university group project, showcasing a polyglot persistence architecture that combines PostgreSQL, MongoDB and Neo4j across different data domains such as users, content and recommendations.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "MongoDB",
+        "Neo4j",
+        "Docker",
+      ],
+      githubLink: "https://github.com/nicorozen/TPO-Grupo-4---Netflix",
+      color: "from-red-600 to-rose-600",
+    },
+    {
+      title: "Sticker Album Manager",
+      description:
+        "A Java Spring Boot REST API for managing a digital sticker album, applying Factory and Strategy design patterns to assign stickers by rarity. Includes JPA persistence, request validation and Swagger/OpenAPI documentation.",
+      technologies: ["Java", "Spring Boot", "JPA", "Swagger", "Lombok"],
+      githubLink: "https://github.com/lucaspuente94/procesoDesarrollo",
+      color: "from-green-600 to-emerald-600",
+    },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white px-4 py-8 mt-[-8%]">
+    <div className="flex flex-col items-center w-full text-white px-4 py-12">
       <div
         className={`transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -29,7 +69,10 @@ const MyProjects = () => {
       >
         {/* Header */}
         <div className="text-center mb-8">
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto mt-16">
+          <h1 className="text-5xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+            My Projects
+          </h1>
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Here are some of the projects I&apos;ve worked on, showcasing my
             skills and passion for development.
           </p>

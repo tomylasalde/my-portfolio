@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${urbanist.className} bg-no-repeat bg-gradient-cover min-h-screen flex flex-col`}>
         <Navbar />
-        <main className="flex-grow flex items-center justify-center">
+        <main className="flex-grow flex flex-col items-center w-full">
           {children}
         </main>
         <Footer />

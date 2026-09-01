@@ -12,17 +12,17 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["HTML", "CSS3", "JavaScript", "Python", "Java"],
+      skills: ["HTML", "CSS3", "JavaScript", "TypeScript", "Python", "Java"],
       color: "bg-purple-600",
     },
     {
       title: "Frameworks",
-      skills: ["Angular", "React", "Next.js"],
+      skills: ["Angular", "React", "Next.js", "Node.js", "Express", "Spring Boot"],
       color: "bg-pink-600",
     },
     {
       title: "Databases",
-      skills: ["SQL"],
+      skills: ["SQL", "PostgreSQL", "MongoDB", "Neo4j"],
       color: "bg-blue-600",
     },
     {
@@ -30,14 +30,19 @@ export default function Skills() {
       skills: ["Git", "Github"],
       color: "bg-green-600",
     },
+    {
+      title: "Tools & DevOps",
+      skills: ["Docker", "JWT", "WebSocket", "Swagger / OpenAPI"],
+      color: "bg-orange-600",
+    },
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white px-4 py-8 mt-[-8%]">
+    <div className="flex flex-col items-center w-full text-white px-4 py-12">
       <div
         className={`transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
+        } w-full flex flex-col items-center`}
       >
         <h1 className="text-5xl font-bold mb-4 text-center bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
           Technical Skills

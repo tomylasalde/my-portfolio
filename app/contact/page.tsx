@@ -40,7 +40,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white px-4 py-6 mt-[-8%]">
+    <div className="flex flex-col items-center w-full text-white px-4 py-12">
       <div
         className={`transition-all duration-1000 ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
